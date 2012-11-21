@@ -1,0 +1,330 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"comma",
+				"commandBox.js"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"fu",
+				"figure	<figure>"
+			],
+			[
+				"rb",
+				"rgba()"
+			],
+			[
+				"test",
+				"testtest"
+			],
+			[
+				"c",
+				"console"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"open",
+				"open_ext_popup"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				":q",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				":ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ht",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"htm",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"html",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"coffee",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 317.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Takuya/Product/HanselMock/js/commandBox.js",
+		"/Users/Takuya/Product/HanselMock/index.html",
+		"/Users/Takuya/Product/coffee/first.coffee",
+		"/Users/Takuya/Product/HanselMock/css/stylesheets/index.css",
+		"/Users/Takuya/Product/HanselMock/css/sass/index.scss",
+		"/Users/Takuya/Product/HanselMock/js/coffee/commandBox.coffee",
+		"/Users/Takuya/Product/HanselMock/grunt.js",
+		"/Users/Takuya/Product/HanselMock/js/commandBox.coffee",
+		"/Users/Takuya/Product/HanselMock/js/index.js",
+		"/Users/Takuya/Product/pluginPlay/sass/play.scss",
+		"/Users/Takuya/Product/HanselMock/css/config.rb",
+		"/Users/Takuya/Product/HanselMock/css/index.scss",
+		"/Users/Takuya/Product/HanselMock/instagram-magazine/assets/js/turn.js",
+		"/Users/Takuya/Product/HanselMock/instagram-magazine/assets/css/styles.css",
+		"/Users/Takuya/Product/HanselMock/instagram-magazine/assets/js/script.js",
+		"/Users/Takuya/Product/HanselMock/instagram-magazine/index.php",
+		"/Users/Takuya/Product/HanselMock/css/index.css",
+		"/Users/Takuya/Product/HanselMock/instagram-magazine/assets/js/index.js",
+		"/Users/Takuya/Product/Hansel/grunt.js",
+		"/Users/Takuya/Product/Hansel/stylesheets/compass.css",
+		"/Users/Takuya/Product/Hansel/stylesheets/play.css",
+		"/Users/Takuya/Product/Hansel/sass/play.scss",
+		"/Users/Takuya/Product/Hansel/sass/compass.scss",
+		"/Users/Takuya/Product/Hansel/stylesheets/compass.scss",
+		"/Users/Takuya/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Takuya/Product/Hansel/play.scss",
+		"/Users/Takuya/Product/Hansel/play.css",
+		"/Users/Takuya/Product/Hansel/temp.scss",
+		"/Users/Takuya/Product/Hansel/play.sass",
+		"/Users/Takuya/Product/coffee/index.js",
+		"/Users/Takuya/Product/coffee/first.js",
+		"/Users/Takuya/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/Takuya/Library/Application Support/Google/Chrome/Default/Extensions/dnlfpnhinnjdgmjfpccajboogcjocdla/1.3.4_0/background/background.html",
+		"/Users/Takuya/Library/Application Support/Google/Chrome/Default/Extensions/dnlfpnhinnjdgmjfpccajboogcjocdla/1.3.4_0/background/popup.js",
+		"/Users/Takuya/Library/Application Support/Google/Chrome/Default/Extensions/dnlfpnhinnjdgmjfpccajboogcjocdla/1.3.4_0/manifest.json",
+		"/Users/Takuya/Library/Application Support/Google/Chrome/Default/Extensions/dnlfpnhinnjdgmjfpccajboogcjocdla/1.3.4_0/background/popup.css",
+		"/Users/Takuya/Library/Application Support/Google/Chrome/Default/Extensions/dnlfpnhinnjdgmjfpccajboogcjocdla/1.3.4_0/background/background.js",
+		"/Users/Takuya/Library/Application Support/Google/Chrome/Default/Extensions/dnlfpnhinnjdgmjfpccajboogcjocdla/1.3.4_0/background/popup.html",
+		"/Users/Takuya/Library/Application Support/Google/Chrome/Default/Extensions/dnlfpnhinnjdgmjfpccajboogcjocdla/1.3.4_0/background/config.css",
+		"/Users/Takuya/Library/Application Support/Google/Chrome/Default/Extensions/dnlfpnhinnjdgmjfpccajboogcjocdla/1.3.4_0/tmp.js",
+		"/Users/Takuya/Library/Application Support/Google/Chrome/Default/Extensions/dnlfpnhinnjdgmjfpccajboogcjocdla/1.3.4_0/background/config-setting.js",
+		"/Users/Takuya/Library/Application Support/Google/Chrome/Default/Extensions/dnlfpnhinnjdgmjfpccajboogcjocdla/1.3.4_0/background/popup-hatena-star.js",
+		"/Users/Takuya/Product/coffee/index.coffee",
+		"/Users/Takuya/.sublime/history/Users/Takuya/Product/coffee/Nov.10.2012_14.32.57.index.coffee",
+		"/Users/Takuya/Product/Web/HappyBank/index.html",
+		"/Users/Takuya/Product/Web/HappyBank/index.js",
+		"/Users/Takuya/Product/Web/HappyBank/jquery-1.7.min.js",
+		"/Users/Takuya/Product/Web/HappyBank/data.js",
+		"/Volumes/t_okamoto@192.168.56.101/Group1App/views/index.twig",
+		"/Users/Takuya/Library/Application Support/Sublime Text 2/Packages/QuickThemes/QuickThemes.sublime-settings",
+		"/Users/Takuya/Library/Application Support/Sublime Text 2/Packages/User/QuickThemes.sublime-settings",
+		"/Users/Takuya/Library/Application Support/Sublime Text 2/Packages/JS2Coffee/JS2Coffee.py",
+		"/Users/Takuya/Library/Application Support/Sublime Text 2/Packages/JS2Coffee/README.md",
+		"/Users/Takuya/Product/Web/HappyBank/index.coffee",
+		"/Users/Takuya/Library/Application Support/Sublime Text 2/Packages/CoffeeScript/Keymaps/Default (OSX).sublime-keymap",
+		"/Users/Takuya/Library/Application Support/Sublime Text 2/Packages/CoffeeCompile/Keymaps/Default (OSX).sublime-keymap",
+		"/Users/Takuya/Product/Web/experiments/index.html",
+		"/Users/Takuya/Library/Application Support/Google/Chrome/Default/Extensions/niloccemoadcdkdjlinkgdfekeahmflj/1.1.3_0/html/background.html",
+		"/Users/Takuya/Library/Application Support/Google/Chrome/Default/Extensions/niloccemoadcdkdjlinkgdfekeahmflj/1.1.3_0/js/background.js",
+		"/Users/Takuya/Library/Application Support/Google/Chrome/Default/Extensions/niloccemoadcdkdjlinkgdfekeahmflj/1.1.3_0/js/keyboard-shortcut.js",
+		"/Users/Takuya/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/Takuya/Library/Application Support/Sublime Text 2/Packages/CoffeeCompile/CoffeeCompile.sublime-settings",
+		"/Users/Takuya/Library/Application Support/Sublime Text 2/Packages/CoffeeCompile/package-metadata.json",
+		"/Users/Takuya/Library/Application Support/Sublime Text 2/Packages/CoffeeScript/CoffeeScript.sublime-build",
+		"/Users/Takuya/Library/Containers/com.evernote.Evernote/Data/Library/Application Support/Evernote/accounts/Evernote/takuya214/external-edits/9C1E1432-D8C5-4D9C-8F02-DCD47C2CD6D5/README.md"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			">\n",
+			".tag",
+			"dd .tag",
+			"tag",
+			"popup",
+			"getSelected",
+			"{\n",
+			"popup.html",
+			"saveBookmarkError",
+			"popup.html",
+			"background.js",
+			"popup.html",
+			"editBookmark",
+			"updateCurrentTab",
+			"BookmarksUpdated",
+			"editBookmark",
+			"追加",
+			".TAG",
+			"dd .tag",
+			"#edit-submit",
+			"button",
+			"###",
+			"key",
+			"keyCode",
+			"key",
+			"#edit-submit",
+			"dd",
+			"midium"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffeecompile_output":
+	{
+		"height": 234.0
+	},
+	"output.exec":
+	{
+		"height": 25.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/Takuya/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 181.0,
+	"status_bar_visible": true
+}

@@ -1,0 +1,42 @@
+
+
+@charset "utf-8";
+@import "compass";
+
+
+//本の大きさによって調節するパラメータ
+$book_height : 1000px;
+$pageBox_height : 935px;
+$pageBox_width : 1222px;
+$pageBox_top : 32px;
+$pageBox_left : 56px;
+
+
+
+body{
+	background:url("../../images/woodtable.jpg") no-repeat;
+	background-size: 4100px;
+}
+
+#book{
+	margin-left:20%;
+	margin-top:3%;
+	#bookImg{
+		position: absolute;
+		height: $book_height;
+		width: auto;
+	}
+	#pagesBox{
+		position: absolute;
+		top: 32px;
+		left: 56px;
+		width: $pageBox_width;
+		height: $pageBox_height;
+		.turn-page-wrapper{
+			@include border-radius( 5px ); //なぜかかからない。
+			.page{
+				@include border-radius( 5px ); //なぜかかからない。
+			}
+		}
+	}
+}
