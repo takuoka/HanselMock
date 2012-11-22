@@ -1,3 +1,10 @@
+###
+to COMPILE
+"coffee --watch --compile --output js/ js/coffee/*.coffee"
+at HanselMock/
+###
+
+
 set_page_background_color = ->
   colors = ["red", "yellow", "blue", "green"]
   pages = document.getElementsByClassName("page")
@@ -9,4 +16,4 @@ set_page_background_color = ->
 
 
 add = (a=1,b=2) ->
-	return a-b
+	return a+b+333
