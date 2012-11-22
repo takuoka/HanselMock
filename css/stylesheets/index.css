@@ -27,7 +27,16 @@ body {
   width: 1658px;
   height: 1156px;
 }
-/* line 49, ../sass/index.scss */
+/* line 48, ../sass/index.scss */
+#book #pagesBox .page .pageContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1156px;
+  width: 829px;
+  overflow: hidden;
+}
+/* line 60, ../sass/index.scss */
 #book #pagesBox .turn-page-wrapper:nth-child(odd) .page {
   -webkit-border-radius: 0 15px 15px 0;
   -moz-border-radius: 0 15px 15px 0;
@@ -35,7 +44,7 @@ body {
   -o-border-radius: 0 15px 15px 0;
   border-radius: 0 15px 15px 0;
 }
-/* line 51, ../sass/index.scss */
+/* line 62, ../sass/index.scss */
 #book #pagesBox .turn-page-wrapper:nth-child(odd) .page .pageBgImg {
   -webkit-border-radius: 0 15px 15px 0;
   -moz-border-radius: 0 15px 15px 0;
@@ -43,7 +52,7 @@ body {
   -o-border-radius: 0 15px 15px 0;
   border-radius: 0 15px 15px 0;
 }
-/* line 57, ../sass/index.scss */
+/* line 68, ../sass/index.scss */
 #book #pagesBox .turn-page-wrapper:nth-child(even) .page {
   -webkit-border-radius: 15px 0 0 15px;
   -moz-border-radius: 15px 0 0 15px;
@@ -51,7 +60,7 @@ body {
   -o-border-radius: 15px 0 0 15px;
   border-radius: 15px 0 0 15px;
 }
-/* line 59, ../sass/index.scss */
+/* line 70, ../sass/index.scss */
 #book #pagesBox .turn-page-wrapper:nth-child(even) .page .pageBgImg {
   -webkit-border-radius: 15px 0 0 15px;
   -moz-border-radius: 15px 0 0 15px;

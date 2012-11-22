@@ -44,6 +44,17 @@ body{
 		width: $pageBox_width;
 		height: $pageBox_height;
 
+		.page{
+			.pageContent{
+				position:absolute;
+				top:0;
+				left:0;
+				height:$pageBox_height;
+				width:$pageBox_width/2;
+				overflow:hidden;
+			}
+		}
+
 		//右ページ
 		.turn-page-wrapper:nth-child(odd){
 			.page{
