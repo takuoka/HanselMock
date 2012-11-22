@@ -8,38 +8,56 @@ COMPILE "compass watch css" at HanselMock/
 @import "compass";
 
 
+
+$body_backgroundUrl:"../../images/woodtable.jpg";
+$backGroundImage_Size:4800px;
+
 //本の大きさによって調節するパラメータ
-$book_height : 1000px;
-$pageBox_height : 935px;
-$pageBox_width : 1222px;
-$pageBox_top : 32px;
-$pageBox_left : 56px;
+$book_width: 1786px;
+$book_height : 1223px;
+$book_MarginTop:10px;
+$book_MarginLeft:20%;
+	$pageBox_width : 1658px;
+	$pageBox_height : 1156px;
+	$pageBox_top : 34px;
+	$pageBox_left : 66px;
 
 
-/*!aaa*/
+
 body{
-	background:url("../../images/woodtable.jpg") no-repeat;
-	background-size: 4100px;
+	background:url($body_backgroundUrl) no-repeat;
+	background-size: $backGroundImage_Size;
 }
 
 #book{
-	margin-left:20%;
-	margin-top:3%;
+	margin-left:$book_MarginLeft;
+	margin-top:$book_MarginTop;
 	#bookImg{
 		position: absolute;
 		height: $book_height;
-		width: auto;
+		width: $book_width;
 	}
 	#pagesBox{
 		position: absolute;
-		top: 32px;
-		left: 56px;
+		top: $pageBox_top;
+		left: $pageBox_left;
 		width: $pageBox_width;
 		height: $pageBox_height;
-		.turn-page-wrapper{
-			@include border-radius( 5px ); //なぜかかからない。
+
+		//右ページ
+		.turn-page-wrapper:nth-child(odd){
 			.page{
-				@include border-radius( 5px ); //なぜかかからない。
+				@include border-radius( 0 15px 15px 0 );
+				.pageBgImg{@include border-radius( 0 15px 15px 0 );}
+				.pageContent{}
+			}
+		}
+		//左ページ
+		.turn-page-wrapper:nth-child(even){
+			.page{
+				@include border-radius( 15px 0 0 15px );
+				.pageBgImg{@include border-radius( 15px 0 0 15px );}
+				.pageContent{}
 			}
 		}
 	}

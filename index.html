@@ -1,58 +1,156 @@
 <!doctype html>
 <html lang="ja">
-<head>
-	<meta charset="UTF-8">
-	<title>Hansel Mock</title>
-	
-	<link rel="stylesheet" href="css/stylesheets/index.css">
-	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="js/turn.js"></script>
-	<script src="js/commandBox.js"></script>
-
-	<script>
-		//全てはここから始まる
-		$(function(){
-			set_page_background_color();
-
-			var book = $("#pagesBox");
-			book.turn();
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Hansel Mock
+        </title>
+        <link rel="stylesheet" href="css/stylesheets/index.css">
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js">
+        </script>
+        <script src="js/turn.js">
+        </script>
+        <script src="js/commandBox.js">
+        </script>
+        <script>
+        		//全てはここから始まる
+		$(function() {
+		    var book = $("#pagesBox");
+		    book.turn();
 
 		});
-	</script>
+        </script>
+    </head>
+    <!-- <img src="images/noteRight.jpg" height="1156" width="824"/>
+    -->
+    
+    <body>
+        <div id="book">
+            <img id="bookImg" src="images/notebook_copy.png">
+            <div id="pagesBox">
+                <div class="page">
+                    <img src="images/noteRight.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteLeft.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteRight.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteLeft.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteRight.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteLeft.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteRight.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteLeft.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteRight.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteLeft.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteRight.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteLeft.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteRight.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteLeft.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteRight.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteLeft.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteRight.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteLeft.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteRight.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+                <div class="page">
+                    <img src="images/noteLeft.jpg" class="pageBgImg" height="1156" width="824"
+                    />
+                    <div class="pageContent">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 
-</head>
-
-
-
-
-
-<body>
-
-	<div id="book">
-		<img id="bookImg" src="images/notebook_copy.png">
-		<div id="pagesBox">
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-			<div class="page"></div>
-		</div>
-	</div>
-
-</body>
 </html>

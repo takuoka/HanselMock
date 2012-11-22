@@ -1,12 +1,12 @@
 ###
 to COMPILE
-"coffee --watch --compile --output js/ js/coffee/*.coffee"
+"coffee --watch --compile --bare --output js/ js/coffee/*.coffee"
 at HanselMock/
 ###
 
 
 set_page_background_color = ->
-  colors = ["red", "yellow", "blue", "green"]
+  colors = ["red", "yellow", "white", "green"]
   pages = document.getElementsByClassName("page")
   i = 0
   while i < pages.length
