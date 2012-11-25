@@ -18,8 +18,8 @@ $backGroundImage_Size:3400px;//4800px/2;
 $title_margin:40px;
 
 //本の大きさによって調節するパラメータ
-$book_MarginTop:5px;
-$book_MarginLeft:20%;
+$book_MarginTop:0px;
+$book_MarginLeft:0%;
 $book_width: 893px;//1786px/2;
 $book_height : 611.5px;//1223px/2;
 	$pageBox_top : 17px;//34px/2;
@@ -44,8 +44,8 @@ body{
 }
 
 #book{
-	margin-left:$book_MarginLeft;
-	margin-top:$book_MarginTop;
+	//margin-left:$book_MarginLeft;
+	//margin-top:$book_MarginTop;
 	#bookImg{
 		position: absolute;
 		height: $book_height;
@@ -70,6 +70,21 @@ body{
 				height:$pageBox_height;
 				width:$pageBox_width/2;
 				overflow:hidden;
+				#welcomeToHanselImg {
+					margin: 166px 45px;
+					height: auto;
+					width: 336px;
+					opacity: 0.8;
+				}
+				#hanselMockTutrialInfo{
+					margin: 177px 27px 10px;
+					font-size: 22px;
+					line-height: 24px;
+					font-weight: bolder;
+					color: rgb(66, 66, 66);
+					opacity:0;
+					@include transition(3s);
+				}
 			}
 		}
 
