@@ -1,27 +1,39 @@
 @charset "utf-8";
 /*
-to COMPILE
+to start COMPILE
 "compass watch css"
 @ HanselMock/
  */
-/* line 29, ../sass/index.scss */
+/* line 32, ../sass/index.scss */
 body {
-  background: url("../../images/woodtable.jpg") no-repeat;
-  background-size: 2400px;
+  background: url("../../img/woodtable.jpg") no-repeat;
+  background-size: 3400px;
 }
 
-/* line 34, ../sass/index.scss */
+/* line 37, ../sass/index.scss */
+#titleRow {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+/* line 41, ../sass/index.scss */
+#subtitleRow {
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 46, ../sass/index.scss */
 #book {
   margin-left: 20%;
   margin-top: 5px;
 }
-/* line 37, ../sass/index.scss */
+/* line 49, ../sass/index.scss */
 #book #bookImg {
   position: absolute;
   height: 611.5px;
   width: 893px;
 }
-/* line 42, ../sass/index.scss */
+/* line 54, ../sass/index.scss */
 #book #pagesBox {
   position: absolute;
   top: 17px;
@@ -29,12 +41,12 @@ body {
   width: 829px;
   height: 578px;
 }
-/* line 50, ../sass/index.scss */
+/* line 62, ../sass/index.scss */
 #book #pagesBox .page .pageBgImg {
   height: 578px;
   width: 414.5px;
 }
-/* line 54, ../sass/index.scss */
+/* line 66, ../sass/index.scss */
 #book #pagesBox .page .pageContent {
   position: absolute;
   top: 0;
@@ -43,7 +55,7 @@ body {
   width: 414.5px;
   overflow: hidden;
 }
-/* line 66, ../sass/index.scss */
+/* line 78, ../sass/index.scss */
 #book #pagesBox .turn-page-wrapper:nth-child(odd) .page {
   -webkit-border-radius: 0 15px 15px 0;
   -moz-border-radius: 0 15px 15px 0;
@@ -51,7 +63,7 @@ body {
   -o-border-radius: 0 15px 15px 0;
   border-radius: 0 15px 15px 0;
 }
-/* line 68, ../sass/index.scss */
+/* line 80, ../sass/index.scss */
 #book #pagesBox .turn-page-wrapper:nth-child(odd) .page .pageBgImg {
   -webkit-border-radius: 0 15px 15px 0;
   -moz-border-radius: 0 15px 15px 0;
@@ -59,7 +71,7 @@ body {
   -o-border-radius: 0 15px 15px 0;
   border-radius: 0 15px 15px 0;
 }
-/* line 74, ../sass/index.scss */
+/* line 86, ../sass/index.scss */
 #book #pagesBox .turn-page-wrapper:nth-child(even) .page {
   -webkit-border-radius: 15px 0 0 15px;
   -moz-border-radius: 15px 0 0 15px;
@@ -67,7 +79,7 @@ body {
   -o-border-radius: 15px 0 0 15px;
   border-radius: 15px 0 0 15px;
 }
-/* line 76, ../sass/index.scss */
+/* line 88, ../sass/index.scss */
 #book #pagesBox .turn-page-wrapper:nth-child(even) .page .pageBgImg {
   -webkit-border-radius: 15px 0 0 15px;
   -moz-border-radius: 15px 0 0 15px;

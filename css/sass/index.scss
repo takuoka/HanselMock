@@ -1,7 +1,7 @@
 
 
 /*
-to COMPILE
+to start COMPILE
 "compass watch css"
 @ HanselMock/
  */
@@ -11,24 +11,36 @@ to COMPILE
 
 
 
-$body_backgroundUrl:"../../images/woodtable.jpg";
-$backGroundImage_Size:2400px;//4800px/2;
+$body_backgroundUrl:"../../img/woodtable.jpg";
+$backGroundImage_Size:3400px;//4800px/2;
+
+//titleRow
+$title_margin:40px;
 
 //本の大きさによって調節するパラメータ
-$book_width: 893px;//1786px/2;
-$book_height : 611.5px;//1223px/2;
 $book_MarginTop:5px;
 $book_MarginLeft:20%;
-	$pageBox_width : 829px;//1658px/2;
-	$pageBox_height :578px; //1156px/2;
+$book_width: 893px;//1786px/2;
+$book_height : 611.5px;//1223px/2;
 	$pageBox_top : 17px;//34px/2;
 	$pageBox_left : 33px;//66px/2;
+	$pageBox_width : 829px;//1658px/2;
+	$pageBox_height :578px; //1156px/2;
 
 
 
 body{
 	background:url($body_backgroundUrl) no-repeat;
 	background-size: $backGroundImage_Size;
+}
+
+#titleRow{
+	margin-top:$title_margin;
+	margin-left:$title_margin;
+}
+#subtitleRow{
+	margin-left:$title_margin;
+	margin-bottom:$title_margin;
 }
 
 #book{
