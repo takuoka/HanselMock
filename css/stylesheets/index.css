@@ -6,8 +6,8 @@ to start COMPILE
  */
 /* line 32, ../sass/index.scss */
 body {
-  background: url("../../img/woodtable.jpg") no-repeat;
-  background-size: 3400px;
+  background: url("../../img/woodtable2.jpg") repeat;
+  background-size: cover;
 }
 
 /* line 37, ../sass/index.scss */

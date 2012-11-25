@@ -11,8 +11,8 @@ to start COMPILE
 
 
 
-$body_backgroundUrl:"../../img/woodtable.jpg";
-$backGroundImage_Size:3400px;//4800px/2;
+$body_backgroundUrl:"../../img/woodtable2.jpg";
+$backGroundImage_Size:cover;
 
 //titleRow
 $title_margin:40px;
@@ -30,7 +30,7 @@ $book_height : 611.5px;//1223px/2;
 
 
 body{
-	background:url($body_backgroundUrl) no-repeat;
+	background:url($body_backgroundUrl) repeat;
 	background-size: $backGroundImage_Size;
 }
 
