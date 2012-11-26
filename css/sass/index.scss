@@ -8,19 +8,17 @@ to start COMPILE
 
 @charset "utf-8";
 @import "compass";
-@import "animate";// from https://github.com/ericam/compass-animate
-@import "animateProperty";
-@include animate-tada();
 
-
-
-
-
+@import "animateProperty";// to use ↓
+//@import "animate";// from https://github.com/ericam/compass-animate
+//@include animate-tada();
+//⇧LiveReloadのコンパイルでkeyframe指定がなぜかできないから直接アニメーションを↓に記述
+//くやしいいい。アニメーション使いたい時は一回普通にコンパイルしてから下にコピろう・・
 
 //---------- ぱらめーた ---------------
 
 $PREFIX_TYPES:  -webkit-, -moz-, -ms-, -o-, '';
- 
+
 $body_backgroundUrl:"../../img/woodtable2.jpg";
 $backGroundImage_Size:cover;
 
@@ -40,9 +38,6 @@ $book_height : 611.5px;//1223px/2;
 
 
 
-
-
-
 //---------- mixin ------------
 //自動的にベンダープレフィックスを追加するmixin
 @mixin addPrefix( $property , $value ){
@@ -50,7 +45,6 @@ $book_height : 611.5px;//1223px/2;
                 #{$prefix}#{$property} : $value;
         }
 }
-
 
 
 //---------- tutrial ----------
@@ -179,9 +173,337 @@ footer{
 
 
 
+// LiveReloadのコンパイルが可笑しいので直接アニメーション定義。
 
 
+@-moz-keyframes tada {
+  /* line 16, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  0% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
 
+  /* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  10% {
+    -moz-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  20% {
+    -moz-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  30% {
+    -moz-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  40% {
+    -moz-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  50% {
+    -moz-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 33, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  60% {
+    -moz-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  70% {
+    -moz-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 39, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  80% {
+    -moz-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  90% {
+    -moz-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 45, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  100% {
+    -moz-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+
+@-webkit-keyframes tada {
+  /* line 16, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  /* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  10% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  20% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  30% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  40% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  50% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 33, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  60% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  70% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 39, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  80% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  90% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 45, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+
+@-o-keyframes tada {
+  /* line 16, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  0% {
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  /* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  10% {
+    -o-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  20% {
+    -o-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  30% {
+    -o-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  40% {
+    -o-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  50% {
+    -o-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 33, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  60% {
+    -o-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  70% {
+    -o-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 39, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  80% {
+    -o-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  90% {
+    -o-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 45, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  100% {
+    -o-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+
+@-ms-keyframes tada {
+  /* line 16, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  0% {
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  /* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  10% {
+    -ms-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  20% {
+    -ms-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  30% {
+    -ms-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  40% {
+    -ms-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  50% {
+    -ms-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 33, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  60% {
+    -ms-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  70% {
+    -ms-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 39, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  80% {
+    -ms-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  90% {
+    -ms-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 45, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  100% {
+    -ms-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes tada {
+  /* line 16, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  0% {
+    transform: scale(1, 1);
+  }
+
+  /* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  10% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  20% {
+    transform: scale(0.9) rotate(-3deg);
+  }
+
+  /* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  30% {
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  40% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  50% {
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 33, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  60% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  70% {
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 39, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  80% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+
+  /* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  90% {
+    transform: scale(1.1) rotate(3deg);
+  }
+
+  /* line 45, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
 
 
 
