@@ -1,6 +1,11 @@
+###
+to COMPILE
+"coffee --watch --bare --compile --output js/ js/coffee/*.coffee"
+at HanselMock/
+###
 
 
-# ---------チュートリアル---------
+### ---------チュートリアル--------- ###
 tutrialInit = ->
   setTimeout disp_WelcomeToHanselImg, 1500
   setTimeout dispTutInfoP, 5000
@@ -32,4 +37,4 @@ disp_explain_UI = ->
     opacity: 0.8
     top: "498px"
     left: "7%"
-# ---------ここまでチュートリアル---------
+### ---------ここまでチュートリアル--------- ###
