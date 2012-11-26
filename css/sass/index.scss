@@ -8,8 +8,8 @@ to start COMPILE
 
 @charset "utf-8";
 @import "compass";
-
-
+@import "animate";
+@include animate($sub: all,$class:true);
 
 $body_backgroundUrl:"../../img/woodtable2.jpg";
 $backGroundImage_Size:cover;
@@ -27,6 +27,33 @@ $book_height : 611.5px;//1223px/2;
 	$pageBox_width : 829px;//1658px/2;
 	$pageBox_height :578px; //1156px/2;
 
+//----------tutrial----------
+#welcomeToHanselImg {
+	margin: 166px 45px;
+	height: auto;
+	width: 336px;
+	opacity: 0.8;
+}
+#hanselMockTutrialInfo{
+	margin: 177px 27px 10px;
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: bolder;
+	color: rgb(66, 66, 66);
+	opacity:0;
+	@include transition(3s);
+}
+#tutrialArrow{
+	height:60px;
+	position:absolute;
+	top:0;
+	left:72%;
+	z-index:10;
+	opacity:0;
+	@include transition(0.5s);
+	@include transition-timing-function(ease-in-out);
+	@extend .flash;
+}
 
 
 body{
@@ -70,21 +97,6 @@ body{
 				height:$pageBox_height;
 				width:$pageBox_width/2;
 				overflow:hidden;
-				#welcomeToHanselImg {
-					margin: 166px 45px;
-					height: auto;
-					width: 336px;
-					opacity: 0.8;
-				}
-				#hanselMockTutrialInfo{
-					margin: 177px 27px 10px;
-					font-size: 22px;
-					line-height: 24px;
-					font-weight: bolder;
-					color: rgb(66, 66, 66);
-					opacity:0;
-					@include transition(3s);
-				}
 			}
 		}
 

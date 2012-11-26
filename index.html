@@ -18,7 +18,19 @@
             $(function() {
                 //TODO ここで動的にページ追加する予定
                 $("#pagesBox").turn({page:4});
+                tutrialInit();
             });
+
+            function tutrialInit(){
+                setTimeout(dispTutInfoP,1000);
+                setTimeout(dispTutArrowImg,1900);
+            }
+            function dispTutInfoP(){
+                $("#hanselMockTutrialInfo").css({"opacity":1});
+            }
+            function dispTutArrowImg(){
+                $("#tutrialArrow").css({"opacity":0.8,"top":"240px","left":"72%"});
+            }
         </script>
 
     </head>
@@ -76,13 +88,6 @@
                                 />
                                 <div class="pageContent">
                                     <p id="hanselMockTutrialInfo">Hanselのモックです。ページの端っこをクリック(またはドラッグ)してみてください。</p>
-                                    <script>
-                                        window.onload = function(){
-                                            setTimeout(function(){
-                                                $("#hanselMockTutrialInfo").css({"opacity":1});
-                                            },1000);
-                                        }
-                                    </script>
                                 </div>
                             </div>
                             <div class="page">
@@ -228,6 +233,8 @@
                 </div><!-- end of #bookSpan -->
             </div><!-- end of #bookRow -->
         </div><!-- end of #bookContainer -->
+
+        <img src="img/arrow.png" id="tutrialArrow"/>
     </body>
 
 </html>
