@@ -9,11 +9,18 @@ to start COMPILE
 @charset "utf-8";
 @import "compass";
 @import "animate";// from https://github.com/ericam/compass-animate
-@import "animateProperty";//⇧用の自作mixin
+@import "animateProperty";
 @include animate-tada();
 
 
+
+
+
+
 //---------- ぱらめーた ---------------
+
+$PREFIX_TYPES:  -webkit-, -moz-, -ms-, -o-, '';
+ 
 $body_backgroundUrl:"../../img/woodtable2.jpg";
 $backGroundImage_Size:cover;
 
@@ -32,12 +39,27 @@ $book_height : 611.5px;//1223px/2;
 
 
 
+
+
+
+
+//---------- mixin ------------
+//自動的にベンダープレフィックスを追加するmixin
+@mixin addPrefix( $property , $value ){
+        @each $prefix in $PREFIX_TYPES{
+                #{$prefix}#{$property} : $value;
+        }
+}
+
+
+
 //---------- tutrial ----------
 #welcomeToHanselImg {
 	margin: 166px 45px;
 	height: auto;
 	width: 336px;
-	opacity: 0.8;
+	opacity: 0;
+	@include transition(3s);
 }
 #hanselMockTutrialInfo{
 	margin: 177px 27px 10px;
@@ -57,8 +79,36 @@ $book_height : 611.5px;//1223px/2;
 	opacity:0;
 	@include transition(0.5s);
 	@include transition-timing-function(ease-in-out);
-	@include animateProperty(tada, 3s, ease, 5s, infinite, alternate);
+	@include animateProperty(tada, 3s, ease, 6s, infinite, alternate);
 }
+#tutrial_explainUI{
+	font-size: 30px;
+	font-weight: bolder;
+	position: absolute;
+	top:-50%;
+	left:7%;
+	z-index: 10;
+	opacity: 0.2;
+	line-height: 1.5;
+	@include transition(1s);
+	@include transition-timing-function(ease-in-out);
+	color:white;
+	background-color: rgba(0,0,0,1);
+	padding:30px;
+	width: 561px;
+	@include addPrefix( border-radius, 15px );
+}
+//--------------tutrial ここまで---------------
+
+
+
+
+
+
+
+
+
+
 
 body{
 	background:url($body_backgroundUrl) repeat;
@@ -122,3 +172,22 @@ body{
 		}
 	}
 }
+footer{
+	height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
