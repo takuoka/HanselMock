@@ -8,25 +8,53 @@ at HanselMock/
 /* ---------チュートリアル---------
 */
 
-var dispTutArrowImg, dispTutInfoP, disp_WelcomeToHanselImg, disp_explain_UI, tutrialInit;
+var dispTutArrowImg, dispTutInfoP, disp_WelcomeToHanselImg, disp_explain_UI, disp_massage_2, hideArrowImg, hide_explain_UI, hide_massage_2, tutrialInit;
 
 tutrialInit = function() {
   var arrowTimer;
   setTimeout(disp_WelcomeToHanselImg, 1500);
-  setTimeout(dispTutInfoP, 5000);
-  arrowTimer = setTimeout(dispTutArrowImg, 7000);
-  $("#pagesBox").bind("start", function(event, pageObject, corner) {
-    if (corner === "tl" || corner === "tr") {
-      clearTimeout(arrowTimer);
-      return $("#tutrialArrow").css({
-        opacity: 0
-      });
+  setTimeout(dispTutInfoP, 3000);
+  arrowTimer = setTimeout(dispTutArrowImg, 4500);
+  return $("#pagesBox").bind("turned", function(event, page, view) {
+    console.log("-------- turned event fire! --------");
+    console.log("page:" + page);
+    console.log("view:" + view);
+    clearTimeout(arrowTimer);
+    hideArrowImg();
+    hide_explain_UI();
+    hide_massage_2();
+    $("#finalHanselLogo").css({
+      opacity: 0
+    });
+    $("#finalSubTitle").css({
+      opacity: 0
+    });
+    if (page === 6 || page === 7) {
+      setTimeout(disp_explain_UI, 500);
+      arrowTimer = setTimeout(dispTutArrowImg, 4300);
+    }
+    if (page === 8 || page === 9) {
+      setTimeout(disp_massage_2, 500);
+      arrowTimer = setTimeout(dispTutArrowImg, 5000);
+    }
+    if (page === 10) {
+      setTimeout((function() {
+        return $("#finalHanselLogo").css({
+          opacity: 1
+        });
+      }), 1500);
+      return setTimeout((function() {
+        return $("#finalSubTitle").css({
+          opacity: 1
+        });
+      }), 4000);
     }
   });
-  return $("#pagesBox").bind("turning", function(event, page, view) {
-    if (page = 6) {
-      return setTimeout(disp_explain_UI, 500);
-    }
+};
+
+disp_WelcomeToHanselImg = function() {
+  return $("#welcomeToHanselImg").css({
+    opacity: 1
   });
 };
 
@@ -39,22 +67,52 @@ dispTutInfoP = function() {
 dispTutArrowImg = function() {
   return $("#tutrialArrow").css({
     opacity: 0.8,
-    top: "240px",
+    top: "303px",
     left: "73%"
   });
 };
 
-disp_WelcomeToHanselImg = function() {
-  return $("#welcomeToHanselImg").css({
-    opacity: 0.8
+hideArrowImg = function() {
+  var $arrow;
+  $arrow = $("#tutrialArrow");
+  $arrow.css({
+    opacity: 0
   });
+  return setTimeout((function() {
+    return $arrow.css({
+      left: 0,
+      top: "100%"
+    });
+  }), 1000);
 };
 
 disp_explain_UI = function() {
   return $("#tutrial_explainUI").css({
     opacity: 0.8,
-    top: "498px",
+    top: "528px",
     left: "7%"
+  });
+};
+
+hide_explain_UI = function() {
+  return $("#tutrial_explainUI").css({
+    opacity: 0,
+    top: "-100px"
+  });
+};
+
+disp_massage_2 = function() {
+  return $("#tutrial_message2").css({
+    opacity: 0.8,
+    top: "468px",
+    left: "20%"
+  });
+};
+
+hide_massage_2 = function() {
+  return $("#tutrial_message2").css({
+    opacity: 0,
+    top: "-100px"
   });
 };
 

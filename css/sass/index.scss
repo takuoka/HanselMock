@@ -23,7 +23,9 @@ $body_backgroundUrl:"../../img/woodtable2.jpg";
 $backGroundImage_Size:cover;
 
 //titleRow
-$title_margin:40px;
+$title_margin-top:105px;
+$title_margin-bottom:46px;
+$title_margin-left:71px;
 
 //本の大きさによって調節するパラメータ
 $book_MarginTop:0px;
@@ -68,21 +70,21 @@ $book_height : 611.5px;//1223px/2;
 	height:60px;
 	position:absolute;
 	top:0;
-	left:72%;
+	left:75%;
 	z-index:10;
 	opacity:0;
 	@include transition(0.5s);
 	@include transition-timing-function(ease-in-out);
 	@include animateProperty(tada, 3s, ease, 6s, infinite, alternate);
 }
-#tutrial_explainUI{
+.tutrialMessage{
 	font-size: 30px;
 	font-weight: bolder;
 	position: absolute;
 	top:-50%;
 	left:7%;
 	z-index: 10;
-	opacity: 0.2;
+	opacity: 0;
 	line-height: 1.5;
 	@include transition(1s);
 	@include transition-timing-function(ease-in-out);
@@ -91,6 +93,30 @@ $book_height : 611.5px;//1223px/2;
 	padding:30px;
 	width: 561px;
 	@include addPrefix( border-radius, 15px );
+}
+.tutrialMessage#tutrial_message2{
+  top:150%;
+  left:150%;
+  width: 800px;
+}
+
+#finalHanselLogo{
+  position: absolute;
+  top: 427px;//338px;
+  left: 19%;
+  z-index: 10;
+  height: 227px;
+  opacity: 0;
+  @include transition(3s);
+}
+#finalSubTitle{
+  position: absolute;
+  top: 640px;
+  left: 22%;
+  z-index: 10;
+  height: 164px;
+  opacity: 0;
+  @include transition(3s);
 }
 //--------------tutrial ここまで---------------
 
@@ -111,12 +137,12 @@ body{
 }
 
 #titleRow{
-	margin-top:$title_margin;
-	margin-left:$title_margin;
+	margin-top:$title_margin-top;
+	margin-left:$title_margin-left;
 }
 #subtitleRow{
-	margin-left:$title_margin;
-	margin-bottom:$title_margin;
+	margin-left:$title_margin-left;
+	margin-bottom:$title_margin-bottom;
 }
 
 #book{
