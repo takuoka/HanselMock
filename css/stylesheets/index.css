@@ -90,8 +90,9 @@ to start COMPILE
 
 /* line 107, ../sass/index.scss */
 body {
-  background: url("../../img/woodtable2.jpg") repeat;
+  background: url("../../img/Desktop_Wallpaper_by_Ap_by_AlterPoser.png") repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Take Light","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
