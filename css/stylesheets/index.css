@@ -8,7 +8,7 @@ to start COMPILE
 #welcomeToHanselImg {
   margin: 166px 45px;
   height: auto;
-  width: 336px;
+  width: 300px;
   opacity: 0;
   -webkit-transition: 3s;
   -moz-transition: 3s;
@@ -92,14 +92,14 @@ to start COMPILE
 .tutrialMessage#tutrial_message2 {
   top: 150%;
   left: 150%;
-  width: 800px;
+  width: 700px;
 }
 
 /* line 103, ../sass/index.scss */
 #finalHanselLogo {
   position: absolute;
   top: 427px;
-  left: 19%;
+  left: 22%;
   z-index: 10;
   height: 227px;
   opacity: 0;
@@ -114,9 +114,9 @@ to start COMPILE
 #finalSubTitle {
   position: absolute;
   top: 640px;
-  left: 22%;
+  left: 26%;
   z-index: 10;
-  height: 164px;
+  width: 500px;
   opacity: 0;
   -webkit-transition: 3s;
   -moz-transition: 3s;
@@ -127,7 +127,7 @@ to start COMPILE
 
 /* line 133, ../sass/index.scss */
 body {
-  background: url("../../img/woodtable2.jpg") repeat;
+  background: url("../../img/woodtable.jpg") repeat;
   background-size: cover;
   font-family: "Take Light","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -154,14 +154,14 @@ body {
 #book #pagesBox {
   position: absolute;
   top: 17px;
-  left: 33px;
-  width: 829px;
+  left: 70px;
+  width: 752px;
   height: 578px;
 }
 /* line 164, ../sass/index.scss */
 #book #pagesBox .page .pageBgImg {
   height: 578px;
-  width: 414.5px;
+  width: 376px;
 }
 /* line 168, ../sass/index.scss */
 #book #pagesBox .page .pageContent {
@@ -169,11 +169,19 @@ body {
   top: 0;
   left: 0;
   height: 578px;
-  width: 414.5px;
+  width: 376px;
   overflow: hidden;
 }
-/* line 180, ../sass/index.scss */
-#book #pagesBox .turn-page-wrapper:nth-child(odd) .page {
+/* line 177, ../sass/index.scss */
+#book #pagesBox .rightPage {
+  -webkit-border-radius: 0 15px 15px 0;
+  -moz-border-radius: 0 15px 15px 0;
+  -ms-border-radius: 0 15px 15px 0;
+  -o-border-radius: 0 15px 15px 0;
+  border-radius: 0 15px 15px 0;
+}
+/* line 179, ../sass/index.scss */
+#book #pagesBox .rightPage .pageBgImg {
   -webkit-border-radius: 0 15px 15px 0;
   -moz-border-radius: 0 15px 15px 0;
   -ms-border-radius: 0 15px 15px 0;
@@ -181,23 +189,15 @@ body {
   border-radius: 0 15px 15px 0;
 }
 /* line 182, ../sass/index.scss */
-#book #pagesBox .turn-page-wrapper:nth-child(odd) .page .pageBgImg {
-  -webkit-border-radius: 0 15px 15px 0;
-  -moz-border-radius: 0 15px 15px 0;
-  -ms-border-radius: 0 15px 15px 0;
-  -o-border-radius: 0 15px 15px 0;
-  border-radius: 0 15px 15px 0;
-}
-/* line 188, ../sass/index.scss */
-#book #pagesBox .turn-page-wrapper:nth-child(even) .page {
+#book #pagesBox .leftPage {
   -webkit-border-radius: 15px 0 0 15px;
   -moz-border-radius: 15px 0 0 15px;
   -ms-border-radius: 15px 0 0 15px;
   -o-border-radius: 15px 0 0 15px;
   border-radius: 15px 0 0 15px;
 }
-/* line 190, ../sass/index.scss */
-#book #pagesBox .turn-page-wrapper:nth-child(even) .page .pageBgImg {
+/* line 184, ../sass/index.scss */
+#book #pagesBox .leftPage .pageBgImg {
   -webkit-border-radius: 15px 0 0 15px;
   -moz-border-radius: 15px 0 0 15px;
   -ms-border-radius: 15px 0 0 15px;
@@ -205,84 +205,84 @@ body {
   border-radius: 15px 0 0 15px;
 }
 
-/* line 196, ../sass/index.scss */
+/* line 189, ../sass/index.scss */
 footer {
   height: 400px;
 }
 
 @-moz-keyframes tada {
   /* line 16, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 208, ../sass/index.scss */
+  /* line 201, ../sass/index.scss */
   0% {
     -moz-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 
   /* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 214, ../sass/index.scss */
+  /* line 207, ../sass/index.scss */
   10% {
     -moz-transform: scale(0.9) rotate(-3deg);
     transform: scale(0.9) rotate(-3deg);
   }
 
   /* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 220, ../sass/index.scss */
+  /* line 213, ../sass/index.scss */
   20% {
     -moz-transform: scale(0.9) rotate(-3deg);
     transform: scale(0.9) rotate(-3deg);
   }
 
   /* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 226, ../sass/index.scss */
+  /* line 219, ../sass/index.scss */
   30% {
     -moz-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 232, ../sass/index.scss */
+  /* line 225, ../sass/index.scss */
   40% {
     -moz-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 238, ../sass/index.scss */
+  /* line 231, ../sass/index.scss */
   50% {
     -moz-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 33, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 244, ../sass/index.scss */
+  /* line 237, ../sass/index.scss */
   60% {
     -moz-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 250, ../sass/index.scss */
+  /* line 243, ../sass/index.scss */
   70% {
     -moz-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 39, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 256, ../sass/index.scss */
+  /* line 249, ../sass/index.scss */
   80% {
     -moz-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 262, ../sass/index.scss */
+  /* line 255, ../sass/index.scss */
   90% {
     -moz-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 45, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 268, ../sass/index.scss */
+  /* line 261, ../sass/index.scss */
   100% {
     -moz-transform: scale(1) rotate(0);
     transform: scale(1) rotate(0);
@@ -291,77 +291,77 @@ footer {
 
 @-webkit-keyframes tada {
   /* line 16, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 276, ../sass/index.scss */
+  /* line 269, ../sass/index.scss */
   0% {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 
   /* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 282, ../sass/index.scss */
+  /* line 275, ../sass/index.scss */
   10% {
     -webkit-transform: scale(0.9) rotate(-3deg);
     transform: scale(0.9) rotate(-3deg);
   }
 
   /* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 288, ../sass/index.scss */
+  /* line 281, ../sass/index.scss */
   20% {
     -webkit-transform: scale(0.9) rotate(-3deg);
     transform: scale(0.9) rotate(-3deg);
   }
 
   /* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 294, ../sass/index.scss */
+  /* line 287, ../sass/index.scss */
   30% {
     -webkit-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 300, ../sass/index.scss */
+  /* line 293, ../sass/index.scss */
   40% {
     -webkit-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 306, ../sass/index.scss */
+  /* line 299, ../sass/index.scss */
   50% {
     -webkit-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 33, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 312, ../sass/index.scss */
+  /* line 305, ../sass/index.scss */
   60% {
     -webkit-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 318, ../sass/index.scss */
+  /* line 311, ../sass/index.scss */
   70% {
     -webkit-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 39, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 324, ../sass/index.scss */
+  /* line 317, ../sass/index.scss */
   80% {
     -webkit-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 330, ../sass/index.scss */
+  /* line 323, ../sass/index.scss */
   90% {
     -webkit-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 45, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 336, ../sass/index.scss */
+  /* line 329, ../sass/index.scss */
   100% {
     -webkit-transform: scale(1) rotate(0);
     transform: scale(1) rotate(0);
@@ -370,77 +370,77 @@ footer {
 
 @-o-keyframes tada {
   /* line 16, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 344, ../sass/index.scss */
+  /* line 337, ../sass/index.scss */
   0% {
     -o-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 
   /* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 350, ../sass/index.scss */
+  /* line 343, ../sass/index.scss */
   10% {
     -o-transform: scale(0.9) rotate(-3deg);
     transform: scale(0.9) rotate(-3deg);
   }
 
   /* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 356, ../sass/index.scss */
+  /* line 349, ../sass/index.scss */
   20% {
     -o-transform: scale(0.9) rotate(-3deg);
     transform: scale(0.9) rotate(-3deg);
   }
 
   /* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 362, ../sass/index.scss */
+  /* line 355, ../sass/index.scss */
   30% {
     -o-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 368, ../sass/index.scss */
+  /* line 361, ../sass/index.scss */
   40% {
     -o-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 374, ../sass/index.scss */
+  /* line 367, ../sass/index.scss */
   50% {
     -o-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 33, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 380, ../sass/index.scss */
+  /* line 373, ../sass/index.scss */
   60% {
     -o-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 386, ../sass/index.scss */
+  /* line 379, ../sass/index.scss */
   70% {
     -o-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 39, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 392, ../sass/index.scss */
+  /* line 385, ../sass/index.scss */
   80% {
     -o-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 398, ../sass/index.scss */
+  /* line 391, ../sass/index.scss */
   90% {
     -o-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 45, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 404, ../sass/index.scss */
+  /* line 397, ../sass/index.scss */
   100% {
     -o-transform: scale(1) rotate(0);
     transform: scale(1) rotate(0);
@@ -449,77 +449,77 @@ footer {
 
 @-ms-keyframes tada {
   /* line 16, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 412, ../sass/index.scss */
+  /* line 405, ../sass/index.scss */
   0% {
     -ms-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 
   /* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 418, ../sass/index.scss */
+  /* line 411, ../sass/index.scss */
   10% {
     -ms-transform: scale(0.9) rotate(-3deg);
     transform: scale(0.9) rotate(-3deg);
   }
 
   /* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 424, ../sass/index.scss */
+  /* line 417, ../sass/index.scss */
   20% {
     -ms-transform: scale(0.9) rotate(-3deg);
     transform: scale(0.9) rotate(-3deg);
   }
 
   /* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 430, ../sass/index.scss */
+  /* line 423, ../sass/index.scss */
   30% {
     -ms-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 436, ../sass/index.scss */
+  /* line 429, ../sass/index.scss */
   40% {
     -ms-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 442, ../sass/index.scss */
+  /* line 435, ../sass/index.scss */
   50% {
     -ms-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 33, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 448, ../sass/index.scss */
+  /* line 441, ../sass/index.scss */
   60% {
     -ms-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 454, ../sass/index.scss */
+  /* line 447, ../sass/index.scss */
   70% {
     -ms-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 39, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 460, ../sass/index.scss */
+  /* line 453, ../sass/index.scss */
   80% {
     -ms-transform: scale(1.1) rotate(-3deg);
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 466, ../sass/index.scss */
+  /* line 459, ../sass/index.scss */
   90% {
     -ms-transform: scale(1.1) rotate(3deg);
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 45, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 472, ../sass/index.scss */
+  /* line 465, ../sass/index.scss */
   100% {
     -ms-transform: scale(1) rotate(0);
     transform: scale(1) rotate(0);
@@ -528,67 +528,67 @@ footer {
 
 @keyframes tada {
   /* line 16, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 480, ../sass/index.scss */
+  /* line 473, ../sass/index.scss */
   0% {
     transform: scale(1, 1);
   }
 
   /* line 18, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 485, ../sass/index.scss */
+  /* line 478, ../sass/index.scss */
   10% {
     transform: scale(0.9) rotate(-3deg);
   }
 
   /* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 490, ../sass/index.scss */
+  /* line 483, ../sass/index.scss */
   20% {
     transform: scale(0.9) rotate(-3deg);
   }
 
   /* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 495, ../sass/index.scss */
+  /* line 488, ../sass/index.scss */
   30% {
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 500, ../sass/index.scss */
+  /* line 493, ../sass/index.scss */
   40% {
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 505, ../sass/index.scss */
+  /* line 498, ../sass/index.scss */
   50% {
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 33, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 510, ../sass/index.scss */
+  /* line 503, ../sass/index.scss */
   60% {
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 36, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 515, ../sass/index.scss */
+  /* line 508, ../sass/index.scss */
   70% {
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 39, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 520, ../sass/index.scss */
+  /* line 513, ../sass/index.scss */
   80% {
     transform: scale(1.1) rotate(-3deg);
   }
 
   /* line 42, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 525, ../sass/index.scss */
+  /* line 518, ../sass/index.scss */
   90% {
     transform: scale(1.1) rotate(3deg);
   }
 
   /* line 45, ../../../../../../Library/Ruby/Gems/1.8/gems/animate-0.2.beta.0/stylesheets/animate/attention/_tada.scss */
-  /* line 530, ../sass/index.scss */
+  /* line 523, ../sass/index.scss */
   100% {
     transform: scale(1) rotate(0);
   }

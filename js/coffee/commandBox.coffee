@@ -9,10 +9,19 @@ at HanselMock/
 ### ---------チュートリアル--------- ###
 
 tutrialInit = ->
-
   setTimeout(disp_WelcomeToHanselImg, 1500)
   setTimeout(dispTutInfoP, 3000)
   arrowTimer = setTimeout(dispTutArrowImg, 4500)
+
+  # ページめくり中に発火するイベント
+  $("#pagesBox").bind "turning", (event, page, view) ->
+    console.log " - - - - turning event fire! - - - - "
+    console.log "page:"+page
+    console.log "view:"+view
+    hide_final_logo()
+    hide_final_subtitle()
+    hide_explain_UI()
+    hide_massage_2()
 
   # ページめくった後に発火するイベント
   $("#pagesBox").bind "turned", (event, page, view) ->
@@ -21,10 +30,6 @@ tutrialInit = ->
     console.log "view:"+view
     clearTimeout(arrowTimer)
     hideArrowImg()
-    hide_explain_UI()
-    hide_massage_2()
-    $("#finalHanselLogo").css(opacity: 0)
-    $("#finalSubTitle").css(opacity: 0)
     if page == 6 or page == 7
       setTimeout(disp_explain_UI, 500)
       arrowTimer = setTimeout(dispTutArrowImg,4300)
@@ -32,8 +37,9 @@ tutrialInit = ->
       setTimeout(disp_massage_2, 500)
       arrowTimer = setTimeout(dispTutArrowImg,5000)
     if page == 10
-      setTimeout( (()->$("#finalHanselLogo").css(opacity: 1)),1500)
-      setTimeout( (()->$("#finalSubTitle").css(opacity: 1)),4000)
+      setTimeout( disp_final_logo, 1500)
+      setTimeout( disp_final_subtitle, 4000)
+
 
 
 disp_WelcomeToHanselImg = ->
@@ -50,7 +56,7 @@ dispTutArrowImg = ->
 hideArrowImg = ->
   $arrow = $("#tutrialArrow")
   $arrow.css({opacity:0})
-  setTimeout( (()->$arrow.css({left: 0,top: "100%"})) ,1000)
+  setTimeout( (()->$arrow.css(left: 0,top: "100%")) ,1000)
 
 
 disp_explain_UI = ->
@@ -74,7 +80,10 @@ hide_massage_2 = ->
     opacity: 0
     top: "-100px"
 
-
+disp_final_logo = -> $("#finalHanselLogo").css(opacity:1)
+hide_final_logo = -> $("#finalHanselLogo").css(opacity:0)
+disp_final_subtitle = -> $("#finalSubTitle").css(opacity:1)
+hide_final_subtitle = -> $("#finalSubTitle").css(opacity:0)
 
 ### ---------ここまでチュートリアル--------- ###
 

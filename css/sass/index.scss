@@ -19,7 +19,7 @@ to start COMPILE
 
 $PREFIX_TYPES:  -webkit-, -moz-, -ms-, -o-, '';
 
-$body_backgroundUrl:"../../img/woodtable2.jpg";
+$body_backgroundUrl:"../../img/woodtable.jpg";
 $backGroundImage_Size:cover;
 
 //titleRow
@@ -33,8 +33,8 @@ $book_MarginLeft:0%;
 $book_width: 893px;//1786px/2;
 $book_height : 611.5px;//1223px/2;
 	$pageBox_top : 17px;//34px/2;
-	$pageBox_left : 33px;//66px/2;
-	$pageBox_width : 829px;//1658px/2;
+	$pageBox_left : 70px;//33px;//66px/2;
+	$pageBox_width : 752px;//829px;//1658px/2;
 	$pageBox_height :578px; //1156px/2;
 
 
@@ -53,7 +53,7 @@ $book_height : 611.5px;//1223px/2;
 #welcomeToHanselImg {
 	margin: 166px 45px;
 	height: auto;
-	width: 336px;
+	width: 300px;
 	opacity: 0;
 	@include transition(3s);
 }
@@ -97,13 +97,13 @@ $book_height : 611.5px;//1223px/2;
 .tutrialMessage#tutrial_message2{
   top:150%;
   left:150%;
-  width: 800px;
+  width: 700px;
 }
 
 #finalHanselLogo{
   position: absolute;
   top: 427px;//338px;
-  left: 19%;
+  left: 22%;
   z-index: 10;
   height: 227px;
   opacity: 0;
@@ -112,9 +112,9 @@ $book_height : 611.5px;//1223px/2;
 #finalSubTitle{
   position: absolute;
   top: 640px;
-  left: 22%;
+  left: 26%;
   z-index: 10;
-  height: 164px;
+  width:500px;
   opacity: 0;
   @include transition(3s);
 }
@@ -174,23 +174,16 @@ body{
 				overflow:hidden;
 			}
 		}
-
-		//右ページ
-		.turn-page-wrapper:nth-child(odd){
-			.page{
-				@include border-radius( 0 15px 15px 0 );
-				.pageBgImg{@include border-radius( 0 15px 15px 0 );}
-				.pageContent{}
-			}
-		}
-		//左ページ
-		.turn-page-wrapper:nth-child(even){
-			.page{
-				@include border-radius( 15px 0 0 15px );
-				.pageBgImg{@include border-radius( 15px 0 0 15px );}
-				.pageContent{}
-			}
-		}
+    .rightPage{
+        @include border-radius( 0 15px 15px 0 );
+        .pageBgImg{@include border-radius( 0 15px 15px 0 );}
+        .pageContent{}
+      }
+    .leftPage{
+      @include border-radius( 15px 0 0 15px );
+      .pageBgImg{@include border-radius( 15px 0 0 15px );}
+      .pageContent{}
+    }
 	}
 }
 footer{
