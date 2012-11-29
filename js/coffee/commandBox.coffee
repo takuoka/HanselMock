@@ -5,10 +5,9 @@ at HanselMock/
 ###
 
 
-
 ### ---------チュートリアル--------- ###
-
 tutrialInit = ->
+<<<<<<< HEAD
   setTimeout(disp_WelcomeToHanselImg, 1500)
   setTimeout(dispTutInfoP, 3000)
   arrowTimer = setTimeout(dispTutArrowImg, 4500)
@@ -39,31 +38,46 @@ tutrialInit = ->
     if page == 10
       setTimeout( disp_final_logo, 1500)
       setTimeout( disp_final_subtitle, 4000)
+=======
+  setTimeout disp_WelcomeToHanselImg, 1500
+  setTimeout dispTutInfoP, 5000
+  arrowTimer = setTimeout(dispTutArrowImg, 7000)
+  #隅っこ触ったら矢印が消える。
+  $("#pagesBox").bind "start", (event, pageObject, corner) ->
+    if corner is "tl" or corner is "tr"
+      clearTimeout arrowTimer
+      $("#tutrialArrow").css opacity: 0
+  #ページ右の開いた時
+  $("#pagesBox").bind "turning", (event, page, view) ->
+    setTimeout disp_explain_UI, 500  if page = 6
+>>>>>>> parent of 252850b... アニメーションに一区切り
 
 
-
-disp_WelcomeToHanselImg = ->
-  $("#welcomeToHanselImg").css opacity: 1
 dispTutInfoP = ->
   $("#hanselMockTutrialInfo").css opacity: 1
-
 
 dispTutArrowImg = ->
   $("#tutrialArrow").css
     opacity: 0.8
-    top: "303px"
+    top: "240px"
     left: "73%"
+<<<<<<< HEAD
 hideArrowImg = ->
   $arrow = $("#tutrialArrow")
   $arrow.css({opacity:0})
   setTimeout( (()->$arrow.css(left: 0,top: "100%")) ,1000)
+=======
+>>>>>>> parent of 252850b... アニメーションに一区切り
 
+disp_WelcomeToHanselImg = ->
+  $("#welcomeToHanselImg").css opacity: 0.8
 
 disp_explain_UI = ->
   $("#tutrial_explainUI").css
     opacity: 0.8
-    top: "528px"
+    top: "498px"
     left: "7%"
+<<<<<<< HEAD
 hide_explain_UI = ->
   $("#tutrial_explainUI").css
     opacity: 0
@@ -92,3 +106,6 @@ hide_final_subtitle = -> $("#finalSubTitle").css(opacity:0)
 
 
 
+=======
+### ---------ここまでチュートリアル--------- ###
+>>>>>>> parent of 252850b... アニメーションに一区切り
