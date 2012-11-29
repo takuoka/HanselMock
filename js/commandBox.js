@@ -8,16 +8,11 @@ at HanselMock/
 /* ---------チュートリアル---------
 */
 
-<<<<<<< HEAD
 var dispTutArrowImg, dispTutInfoP, disp_WelcomeToHanselImg, disp_explain_UI, disp_final_logo, disp_final_subtitle, disp_massage_2, hideArrowImg, hide_explain_UI, hide_final_logo, hide_final_subtitle, hide_massage_2, tutrialInit;
-=======
-var dispTutArrowImg, dispTutInfoP, disp_WelcomeToHanselImg, disp_explain_UI, tutrialInit;
->>>>>>> parent of 252850b... アニメーションに一区切り
 
 tutrialInit = function() {
   var arrowTimer;
   setTimeout(disp_WelcomeToHanselImg, 1500);
-<<<<<<< HEAD
   setTimeout(dispTutInfoP, 3000);
   arrowTimer = setTimeout(dispTutArrowImg, 4500);
   $("#pagesBox").bind("turning", function(event, page, view) {
@@ -46,22 +41,13 @@ tutrialInit = function() {
     if (page === 10) {
       setTimeout(disp_final_logo, 1500);
       return setTimeout(disp_final_subtitle, 4000);
-=======
-  setTimeout(dispTutInfoP, 5000);
-  arrowTimer = setTimeout(dispTutArrowImg, 7000);
-  $("#pagesBox").bind("start", function(event, pageObject, corner) {
-    if (corner === "tl" || corner === "tr") {
-      clearTimeout(arrowTimer);
-      return $("#tutrialArrow").css({
-        opacity: 0
-      });
->>>>>>> parent of 252850b... アニメーションに一区切り
     }
   });
-  return $("#pagesBox").bind("turning", function(event, page, view) {
-    if (page = 6) {
-      return setTimeout(disp_explain_UI, 500);
-    }
+};
+
+disp_WelcomeToHanselImg = function() {
+  return $("#welcomeToHanselImg").css({
+    opacity: 1
   });
 };
 
@@ -74,26 +60,33 @@ dispTutInfoP = function() {
 dispTutArrowImg = function() {
   return $("#tutrialArrow").css({
     opacity: 0.8,
-    top: "240px",
+    top: "303px",
     left: "73%"
   });
 };
 
-disp_WelcomeToHanselImg = function() {
-  return $("#welcomeToHanselImg").css({
-    opacity: 0.8
+hideArrowImg = function() {
+  var $arrow;
+  $arrow = $("#tutrialArrow");
+  $arrow.css({
+    opacity: 0
   });
+  return setTimeout((function() {
+    return $arrow.css({
+      left: 0,
+      top: "100%"
+    });
+  }), 1000);
 };
 
 disp_explain_UI = function() {
   return $("#tutrial_explainUI").css({
     opacity: 0.8,
-    top: "498px",
+    top: "528px",
     left: "7%"
   });
 };
 
-<<<<<<< HEAD
 hide_explain_UI = function() {
   return $("#tutrial_explainUI").css({
     opacity: 0,
@@ -140,8 +133,6 @@ hide_final_subtitle = function() {
   });
 };
 
-=======
->>>>>>> parent of 252850b... アニメーションに一区切り
 /* ---------ここまでチュートリアル---------
 */
 
