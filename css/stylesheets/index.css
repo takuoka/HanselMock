@@ -8,7 +8,7 @@ to start COMPILE
 #welcomeToHanselImg {
   margin: 166px 45px;
   height: auto;
-  width: 300px;
+  width: 340px;
   opacity: 0;
   -webkit-transition: 3s;
   -moz-transition: 3s;
@@ -154,14 +154,14 @@ body {
 #book #pagesBox {
   position: absolute;
   top: 17px;
-  left: 70px;
-  width: 752px;
+  left: 33px;
+  width: 829px;
   height: 578px;
 }
 /* line 164, ../sass/index.scss */
 #book #pagesBox .page .pageBgImg {
   height: 578px;
-  width: 376px;
+  width: 414.5px;
 }
 /* line 168, ../sass/index.scss */
 #book #pagesBox .page .pageContent {
@@ -169,7 +169,7 @@ body {
   top: 0;
   left: 0;
   height: 578px;
-  width: 376px;
+  width: 414.5px;
   overflow: hidden;
 }
 /* line 177, ../sass/index.scss */
