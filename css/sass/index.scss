@@ -23,15 +23,17 @@ $body_backgroundUrl:"../../img/woodtable2.jpg";
 $backGroundImage_Size:cover;
 
 //titleRow
-$title_margin:40px;
+$title_margin-top:105px;
+$title_margin-bottom:46px;
+$title_margin-left:71px;
 
 //本の大きさによって調節するパラメータ
 $book_MarginTop:0px;
 $book_MarginLeft:0%;
-$book_width: 893px;//1786px/2;
-$book_height : 611.5px;//1223px/2;
-	$pageBox_top : 17px;//34px/2;
-	$pageBox_left : 33px;//66px/2;
+$book_width: 1786px/2;
+$book_height : 1223px/2;
+	$pageBox_top : 34px/2;
+	$pageBox_left :33px;//66px/2;
 	$pageBox_width : 829px;//1658px/2;
 	$pageBox_height :578px; //1156px/2;
 
@@ -51,7 +53,7 @@ $book_height : 611.5px;//1223px/2;
 #welcomeToHanselImg {
 	margin: 166px 45px;
 	height: auto;
-	width: 336px;
+	width: 340px;
 	opacity: 0;
 	@include transition(3s);
 }
@@ -68,21 +70,21 @@ $book_height : 611.5px;//1223px/2;
 	height:60px;
 	position:absolute;
 	top:0;
-	left:72%;
+	left:75%;
 	z-index:10;
 	opacity:0;
 	@include transition(0.5s);
 	@include transition-timing-function(ease-in-out);
 	@include animateProperty(tada, 3s, ease, 6s, infinite, alternate);
 }
-#tutrial_explainUI{
+.tutrialMessage{
 	font-size: 30px;
 	font-weight: bolder;
 	position: absolute;
 	top:-50%;
 	left:7%;
 	z-index: 10;
-	opacity: 0.2;
+	opacity: 0;
 	line-height: 1.5;
 	@include transition(1s);
 	@include transition-timing-function(ease-in-out);
@@ -91,6 +93,30 @@ $book_height : 611.5px;//1223px/2;
 	padding:30px;
 	width: 561px;
 	@include addPrefix( border-radius, 15px );
+}
+.tutrialMessage#tutrial_message2{
+  top:150%;
+  left:150%;
+  width: 700px;
+}
+
+#finalHanselLogo{
+  position: absolute;
+  top: 427px;//338px;
+  left: 22%;
+  z-index: 10;
+  height: 227px;
+  opacity: 0;
+  @include transition(3s);
+}
+#finalSubTitle{
+  position: absolute;
+  top: 640px;
+  left: 26%;
+  z-index: 10;
+  width:500px;
+  opacity: 0;
+  @include transition(3s);
 }
 //--------------tutrial ここまで---------------
 
@@ -111,12 +137,12 @@ body{
 }
 
 #titleRow{
-	margin-top:$title_margin;
-	margin-left:$title_margin;
+	margin-top:$title_margin-top;
+	margin-left:$title_margin-left;
 }
 #subtitleRow{
-	margin-left:$title_margin;
-	margin-bottom:$title_margin;
+	margin-left:$title_margin-left;
+	margin-bottom:$title_margin-bottom;
 }
 
 #book{
@@ -148,23 +174,16 @@ body{
 				overflow:hidden;
 			}
 		}
-
-		//右ページ
-		.turn-page-wrapper:nth-child(odd){
-			.page{
-				@include border-radius( 0 15px 15px 0 );
-				.pageBgImg{@include border-radius( 0 15px 15px 0 );}
-				.pageContent{}
-			}
-		}
-		//左ページ
-		.turn-page-wrapper:nth-child(even){
-			.page{
-				@include border-radius( 15px 0 0 15px );
-				.pageBgImg{@include border-radius( 15px 0 0 15px );}
-				.pageContent{}
-			}
-		}
+    .rightPage{
+        @include border-radius( 0 15px 15px 0 );
+        .pageBgImg{@include border-radius( 0 15px 15px 0 );}
+        .pageContent{}
+      }
+    .leftPage{
+      @include border-radius( 15px 0 0 15px );
+      .pageBgImg{@include border-radius( 15px 0 0 15px );}
+      .pageContent{}
+    }
 	}
 }
 footer{
